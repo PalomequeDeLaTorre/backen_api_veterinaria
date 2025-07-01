@@ -1,15 +1,15 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-let Veterinaria = new Schema ({
+let Mascota = new Schema ({
+    nombre: {
+        type: String
+    },
     tipo: {
         type: String,
         enum: ['Perro', 'Gato', 'Ave', 'Reptil', 'Conejos', 'Pez', 'Roedores','Otro'],
     },
     raza: {
-        type: String
-    },
-    nombre: {
         type: String
     },
     edad: {
@@ -36,7 +36,7 @@ let Veterinaria = new Schema ({
     }
     
 },{
-    collection: 'veterinaria'
+    collection: 'mascotas',
 })  
 
-module.exports = mongoose.model('Veterinaria', Veterinaria)
+module.exports = mongoose.model('Mascota', Mascota)
