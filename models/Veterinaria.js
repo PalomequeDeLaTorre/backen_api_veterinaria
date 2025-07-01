@@ -28,7 +28,7 @@ let Veterinaria = new Schema ({
         type: String
     },
     telefono: {
-        type: Number
+        type: String,
     },
     vacunas: {
         type: [String],
