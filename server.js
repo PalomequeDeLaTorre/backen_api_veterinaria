@@ -28,7 +28,7 @@ app.use(cors());
 app.get('/', (req, res) => {
   res.status(200).json({
     status: 'OK',
-    message: 'API de Veterinaria funcionando',
+    message: 'API de Mascotas funcionando',
     timestamp: new Date().toISOString()
   });
 });
