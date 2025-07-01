@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 let Veterinaria = new Schema ({
     tipo: {
         type: String,
-        enum: ['Perro', 'Gato', 'Ave', 'Reptil', 'Conejos', 'Pez', 'Reptiles', 'Roedores','Otro'],
+        enum: ['Perro', 'Gato', 'Ave', 'Reptil', 'Conejos', 'Pez', 'Roedores','Otro'],
     },
     raza: {
         type: String
