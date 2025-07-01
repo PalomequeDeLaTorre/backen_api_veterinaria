@@ -6,7 +6,8 @@ const createError = require('http-errors');
 
 // Conexión con la BD
 mongoose
-  .connect('mongodb://127.0.0.1:27017/veterinaria')
+  //.connect('mongodb://127.0.0.1:27017/veterinaria')
+  .connect('mongodb+srv://carlospdti22:T0anMN2QvanAcYh5@cluster0.lojtckl.mongodb.net/veterinaria?retryWrites=true&w=majority&appName=Cluster0')
   .then((x) => {
     console.log(`Conectado exitosamente a la BD: "${x.connections[0].name}"`);
   })
