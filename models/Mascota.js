@@ -6,8 +6,7 @@ let Mascota = new Schema ({
         type: String
     },
     tipo: {
-        type: String,
-        enum: ['Perro', 'Gato', 'Ave', 'Reptil', 'Conejos', 'Pez', 'Roedores','Otro'],
+        type: String
     },
     raza: {
         type: String
